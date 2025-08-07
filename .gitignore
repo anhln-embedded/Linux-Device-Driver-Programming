@@ -1,0 +1,33 @@
+# Kernel module build files
+*.ko
+*.o
+*.mod
+*.mod.c
+*.mod.o
+*.symvers
+*.order
+modules.order
+Module.symvers
+
+# Build system files
+.*.cmd
+.tmp_versions/
+*.markers
+
+# Editor files
+*~
+*.swp
+*.swo
+.vscode/
+.DS_Store
+
+# Test executables
+user_app
+test_*
+
+# Log files
+*.log
+
+# Backup files
+*.bak
+*.orig
