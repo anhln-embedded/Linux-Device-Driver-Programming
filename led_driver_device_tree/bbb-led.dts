@@ -1,0 +1,24 @@
+# 0 "bbb-led.dtso"
+# 0 "<built-in>"
+# 0 "<command-line>"
+# 1 "bbb-led.dtso"
+# 1 "/usr/src/linux-headers-6.8.0-65-generic/include/dt-bindings/gpio/gpio.h" 1
+# 2 "bbb-led.dtso" 2
+
+/dts-v1/;
+/plugin/;
+
+/ {
+    compatible = "ti,beaglebone", "ti,beaglebone-black";
+
+    fragment@0 {
+        target-path = "/";
+        __overlay__ {
+            bbb_led: bbb-led@0 {
+                compatible = "anhln,bbb-led";
+                status = "okay";
+                led-gpios = <&gpio0 30 0>;
+            };
+        };
+    };
+};

@@ -1,0 +1,17 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    compatible = "ti,beaglebone", "ti,beaglebone-black";
+
+    fragment@0 {
+        target-path = "/";
+        __overlay__ {
+            bbb_led: bbb-led@0 {
+                compatible = "anhln,bbb-led";
+                status = "okay";
+                led-gpios = <&gpio0 30 0>; // GPIO0_30 (P9_11), GPIO_ACTIVE_HIGH = 0
+            };
+        };
+    };
+};
