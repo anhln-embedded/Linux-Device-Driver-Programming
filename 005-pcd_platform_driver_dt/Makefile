@@ -1,5 +1,5 @@
 # Tên module
-obj-m += hello_module.o
+obj-m += pcd_platform_driver_dt.o
 
 # Đường dẫn tới source kernel đã build
 KDIR := /home/anhln/BBB/linux
